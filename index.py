@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from image import make_image,match
-match_url = "https://soccer.yahoo.co.jp/jleague/category/j1/teams/132/schedule?gk=2"
+match_url = "https://data.j-league.or.jp/SFMS01/search?competition_years=2024&competition_frame_ids=1&competition_ids=589&team_ids=11&home_away_select=0&tv_relay_station_name="
 
 #HTMLを取得して変数に格納する
 match_html = requests.get(match_url).text
